@@ -1,0 +1,8 @@
+:root {
+  --c-1: lightblue;
+}
+
+body {
+  margin: 0;
+  background-color: var(--c-1);
+}
