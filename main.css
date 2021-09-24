@@ -1,8 +1,55 @@
 :root {
+  font-size: 2rem;
   --c-1: lightblue;
+  --c-2: #5f7fff;
+  --c-2-dark: #506cd9;
 }
 
 body {
   margin: 0;
   background-color: var(--c-1);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 5rem;
+}
+
+#leftSide {
+  display: flex;
+  align-items: center;
+}
+
+#leftSide div#profilePicture {
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: pink;
+  margin: 0rem 1rem;
+  
+  box-shadow: 2px 2px 5px 0px black;
+
+  background-image: url("https://avatars.githubusercontent.com/u/88311518?v=4");
+  background-size: cover;
+  background-position: center;
+}
+
+#rightSide a#githubButton {
+  background-color: var(--c-2);
+  border-radius: 1.5rem;
+  padding: .5rem .8rem;
+  margin: 0rem 1rem;
+  color: white;
+  font-family: Calibri;
+  font-weight: bold;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+#rightSide a#githubButton:hover {
+  background-color: var(--c-2-dark);
 }
