@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 :root {
   font-size: 2rem;
-  --c-1: lightblue;
+  --c-1: #f9f9f9;
   --c-2: #5f7fff;
   --c-2-dark: #506cd9;
+  --c-3: #cacaca;
 }
 
 body {
@@ -16,6 +18,8 @@ header {
   justify-content: space-between;
   background-color: white;
   height: 5rem;
+
+  box-shadow: 0px 0px 3px 0px var(--c-3);
 }
 
 #leftSide {
@@ -30,11 +34,15 @@ header {
   background-color: pink;
   margin: 0rem 1rem;
   
-  box-shadow: 2px 2px 5px 0px black;
+  box-shadow: 2px 1px 5px 0px var(--c-3);
 
   background-image: url("https://avatars.githubusercontent.com/u/88311518?v=4");
   background-size: cover;
   background-position: center;
+}
+
+#leftSide div#name {
+  font-family: Montserrat;
 }
 
 #rightSide a#githubButton {
@@ -43,7 +51,7 @@ header {
   padding: .5rem .8rem;
   margin: 0rem 1rem;
   color: white;
-  font-family: Calibri;
+  font-family: Helvetica;
   font-weight: bold;
 
   user-select: none;
@@ -53,3 +61,4 @@ header {
 #rightSide a#githubButton:hover {
   background-color: var(--c-2-dark);
 }
+
