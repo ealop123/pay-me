@@ -102,8 +102,8 @@ a.githubButton:hover {
 
 .messageProfile {
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
   background-color: pink;
   margin: 0 .5rem 0 0;
 }
