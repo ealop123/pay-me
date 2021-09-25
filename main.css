@@ -12,13 +12,21 @@ body {
 }
 
 header {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: white;
   height: 5rem;
 
   box-shadow: 0px 0px 3px 0px var(--c-3);
+}
+
+header div#headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
 }
 
 #leftSide {
@@ -31,8 +39,8 @@ header {
   height: 3.5rem;
   width: 3.5rem;
   background-color: pink;
-  margin: 0rem 1rem 0rem 50rem;
-  
+  margin: 0 1rem 0 0; 
+
   box-shadow: 2px 1px 5px 0px var(--c-3);
 
   background-image: url("https://avatars.githubusercontent.com/u/88311518?v=4");
@@ -48,7 +56,6 @@ header {
   background-color: var(--c-2);
   border-radius: 1.5rem;
   padding: .5rem .8rem;
-  margin: 0rem 50rem 0rem 0rem;
   color: white;
   font-family: Helvetica;
   font-weight: bold;
@@ -62,19 +69,14 @@ header {
 }
 
 #contentArea {
-  margin: 3rem 50rem;
-  max-width: 80rem;
-  min-width: 20rem;
+  display: flex;
+  justify-content: center;
   height: 70rem;
-  background-color: black;
+  border: 1px solid black;
 }
 
 #contentArea div.column {
-  height: 3rem;
-  background-color: white;
-}
-
-#contentArea div#messageArea {
+  border: 1px solid red;
   width: 35rem;
-  height: 5rem
+  height: 5rem;
 }
