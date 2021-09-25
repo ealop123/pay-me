@@ -26,7 +26,8 @@ header div#headerContent {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
+  padding: 0 1rem;
 }
 
 #leftSide {
