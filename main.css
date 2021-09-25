@@ -61,7 +61,20 @@ header {
   background-color: var(--c-2-dark);
 }
 
-.column {
-  height: 5rem;
+#contentArea {
+  margin: 3rem 50rem;
+  max-width: 80rem;
+  min-width: 20rem;
+  height: 70rem;
   background-color: black;
+}
+
+#contentArea div.column {
+  height: 3rem;
+  background-color: white;
+}
+
+#contentArea div#messageArea {
+  width: 35rem;
+  height: 5rem
 }
