@@ -93,7 +93,7 @@ a.githubButton:hover {
 .message {
   border: 1px solid transparent;
   min-height: 1rem;
-  box-shadow: 0px 0px 2px 2px var(--c-3);
+  box-shadow: 0 0 4px -1px var(--c-3);
   padding: 0 1rem;
   width: 100%;
 }
