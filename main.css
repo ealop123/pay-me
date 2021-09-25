@@ -26,7 +26,7 @@ header div#headerContent {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1000px;
+  max-width: 600px;
 }
 
 #leftSide {
@@ -39,7 +39,7 @@ header div#headerContent {
   height: 3.5rem;
   width: 3.5rem;
   background-color: pink;
-  margin: 0 1rem 0 0; 
+  margin: 0 1rem 0 0;
 
   box-shadow: 2px 1px 5px 0px var(--c-3);
 
