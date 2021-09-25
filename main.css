@@ -81,3 +81,14 @@ header div#headerContent {
   width: 35rem;
   height: 5rem;
 }
+
+@media only screen and (max-width: 600px){
+  /* #rightSide {
+    display: none;
+  } */
+  
+  header div#headerContent {
+    /* justify-content: center; */
+    flex-direction: column;
+  }
+}
