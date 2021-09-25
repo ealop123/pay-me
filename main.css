@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 :root {
-  font-size: 2rem;
   --c-1: #f9f9f9;
   --c-2: #5f7fff;
   --c-2-dark: #506cd9;
@@ -32,7 +31,7 @@ header {
   height: 3.5rem;
   width: 3.5rem;
   background-color: pink;
-  margin: 0rem 1rem;
+  margin: 0rem 1rem 0rem 50rem;
   
   box-shadow: 2px 1px 5px 0px var(--c-3);
 
@@ -49,11 +48,11 @@ header {
   background-color: var(--c-2);
   border-radius: 1.5rem;
   padding: .5rem .8rem;
-  margin: 0rem 1rem;
+  margin: 0rem 50rem 0rem 0rem;
   color: white;
   font-family: Helvetica;
   font-weight: bold;
-
+  font-size: .8rem;
   user-select: none;
   cursor: pointer;
 }
@@ -62,3 +61,7 @@ header {
   background-color: var(--c-2-dark);
 }
 
+.column {
+  height: 5rem;
+  background-color: black;
+}
