@@ -53,7 +53,7 @@ header div#headerContent {
   font-family: Montserrat;
 }
 
-#rightSide a#githubButton {
+a.githubButton {
   background-color: var(--c-2);
   border-radius: 1.5rem;
   padding: .5rem .8rem;
@@ -65,7 +65,7 @@ header div#headerContent {
   cursor: pointer;
 }
 
-#rightSide a#githubButton:hover {
+a.githubButton:hover {
   background-color: var(--c-2-dark);
 }
 
@@ -82,13 +82,23 @@ header div#headerContent {
   height: 5rem;
 }
 
+
+/*
+  Styling for Mobile Only screen
+*/
+.mobileOnly {
+  display: none;
+}
 @media only screen and (max-width: 600px){
-  /* #rightSide {
+  .mobileOnly {
+    display: inherit;
+  }
+
+  #rightSide {
     display: none;
-  } */
-  
+  }
+
   header div#headerContent {
-    /* justify-content: center; */
-    flex-direction: column;
+    justify-content: center;
   }
 }
