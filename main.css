@@ -8,6 +8,7 @@
   --c-2: #5f7fff;
   --c-2-dark: #506cd9;
   --c-3: #cacaca;
+  --mw-1: 1000px;
 }
 
 body {
@@ -30,7 +31,7 @@ header div#headerContent {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1000px;
+  max-width: var(--mw-1);
   padding: 0 1rem;
 }
 
@@ -77,7 +78,9 @@ a.githubButton:hover {
   display: flex;
   justify-content: center;
   height: 70rem;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  max-width: var(--mw-1);
+  margin: auto;
 }
 
 #contentArea div.column {
@@ -90,7 +93,7 @@ a.githubButton:hover {
 .message {
   border: 1px solid transparent;
   min-height: 1rem;
-  box-shadow: 0px 0px 3px 0px var(--c-3);
+  box-shadow: 0px 0px 2px 2px var(--c-3);
   padding: 0 1rem;
   width: 100%;
 }
