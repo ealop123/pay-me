@@ -104,8 +104,16 @@ a.githubButton:hover {
   border-radius: 50%;
   height: 3rem;
   width: 3rem;
-  background-color: pink;
   margin: 0 .5rem 0 0;
+  box-shadow: 0 0 3px 0 black;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.messageProfile.panda {
+  background-image: url("./imgs/panda.png");
 }
 
 .message {
