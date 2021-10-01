@@ -90,6 +90,14 @@ a.githubButton:hover {
   padding: 1rem;
 }
 
+.messageName {
+  font-weight: bold;
+}
+
+.messageContext {
+  font-family: calibri;
+}
+
 .messageDescription {
   display: flex;
   align-items: center;
@@ -105,7 +113,6 @@ a.githubButton:hover {
   height: 3rem;
   width: 3rem;
   margin: 0 .5rem 0 0;
-  box-shadow: 0 0 3px 0 black;
 
   background-size: cover;
   background-position: center;
