@@ -145,6 +145,7 @@ a.githubButton:hover {
 
 .message {
   border: 1px solid transparent;
+  border-radius: 20px;
   min-height: 1rem;
   box-shadow: 0 0 4px -1px var(--c-3);
   padding: 0 1rem;
