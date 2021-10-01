@@ -113,7 +113,27 @@ a.githubButton:hover {
 }
 
 .messageProfile.panda {
-  background-image: url("./imgs/panda.png");
+  background-image: url("./imgs/Panda.png");
+}
+
+.messageProfile.bear {
+  background-image: url("./imgs/Bear.png");
+}
+
+.messageProfile.bull {
+  background-image: url("./imgs/Bull.png");
+}
+
+.messageProfile.cat {
+  background-image: url("./imgs/Cat.png");
+}
+
+.messageProfile.fish {
+  background-image: url("./imgs/Fish.png");
+}
+
+.messageProfile.fox {
+  background-image: url("./imgs/Fox.png");
 }
 
 .message {
