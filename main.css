@@ -96,12 +96,13 @@ a.githubButton:hover {
 
 .messageContext {
   font-family: calibri;
+  padding-left: 2.5rem;
 }
 
 .messageDescription {
   display: flex;
   align-items: center;
-  margin: 0 0 .5rem 0;
+  margin: 0 0 .5rem -2.5rem;
 }
 
 .messageInfo div {
@@ -145,7 +146,7 @@ a.githubButton:hover {
 
 .message {
   border: 1px solid transparent;
-  border-radius: 20px;
+  border-radius: 0 20px 20px 20px;
   min-height: 1rem;
   box-shadow: 0 0 4px -1px var(--c-3);
   padding: 0 1rem;
