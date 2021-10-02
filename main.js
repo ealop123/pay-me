@@ -1,8 +1,10 @@
 const main = function () {
-createMessage ();       
+ for (let i=0; i < 10; i++) {
+   createFakeMessage ();
+ }
 }
 
-function createMessage () {
+function createMessage (name, amt, msg, img) {
   const messageContext = document.createElement('div');
   messageContext.classList.add('messageContext');
   document.querySelector('#messageArea')
@@ -14,7 +16,7 @@ function createMessage () {
 
   const messageProfile = document.createElement('div');
   messageProfile.classList.add('messageProfile');
-  messageProfile.classList.add('panda');
+  messageProfile.classList.add(img);
   messageDescription.appendChild(messageProfile);
 
   const messageInfo = document.createElement('div');
@@ -23,7 +25,7 @@ function createMessage () {
 
   const messageName = document.createElement('div');
   messageName.classList.add('messageName');
-  messageName.innerText = 'Jinx123';
+  messageName.innerText = name;
   messageInfo.appendChild(messageName);
 
   const textNode = document.createTextNode(' donated ');
@@ -31,7 +33,7 @@ function createMessage () {
 
   const contributionAmount = document.createElement('div');
   contributionAmount.classList.add('contributionAmount');
-  contributionAmount.innerText = '$20';
+  contributionAmount.innerText = '$' + amt;
   messageInfo.appendChild(contributionAmount);
 
   const message = document.createElement('div');
@@ -39,24 +41,32 @@ function createMessage () {
   messageContext.appendChild(message);
 
   const p = document.createElement('p');
-  p.innerText = 'Hey 👋 I just created a page here.';
+  p.innerText = msg;
   message.appendChild(p);
 }
 
+let lastImg = 'panda';
 
-/*
-<div class="messageContext">
- <div class="messageDescription">
-   <div class="messageProfile panda"></div>
-   <div class="messageInfo">
-     <div class="messageName">Jinx123</div>
-     donated
-     <div class="contributionAmount">$20</div>
-   </div>
- </div>
- <div class="message">
-   <p>Hey 👋 I just created a page here.</p>
- </div>
-</div>
-*/
+function createFakeMessage() {
+  const names = ['Kyle', 'Chad', 'Michael', 'Jason', 'Steven', 'Jackson'];
+  const randomName = names[~~(Math.random() * names.length)];
+
+  const amount = Math.random() * 100;
+  const amountFix = amount.toFixed(2);
+  const imgArray = ['fox', 'panda', 'fish', 'bear', 'bull', 'cat'];
+  const filteredArray = imgArray.filter(img => img != lastImg);
+  const randomImg = filteredArray[~~(Math.random() * filteredArray.length)];
+  lastImg = randomImg;
+
+  const messageArray = [
+    'north',
+    'east',
+    'south',
+    'weast'
+  ];
+
+  const randomMsg = messageArray[~~(Math.random() * messageArray.length)];
+  createMessage(randomName, amountFix, randomMsg, randomImg);
+}
+
 window.addEventListener("load", main);
