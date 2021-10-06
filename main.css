@@ -153,11 +153,20 @@ a.githubButton:hover {
   padding: 0 1rem;
   width: 100%;
 }
+#contrabutionArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #contrabutionForm {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  box-shadow: 0 0 4px -1px var(--c-3);
+  width: 80%;
+  padding: 1rem;
 }
 
 #contrabutionForm h2 {
@@ -172,7 +181,7 @@ a.githubButton:hover {
 
 #applauseArea {
   display: flex;
-  width: 80%;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
 
@@ -230,7 +239,10 @@ a.githubButton:hover {
   border: 1px solid var(--c-2);
 }
 
-
+#nameInput {
+  margin-top: 1rem;
+  width: 100%;
+}
 /*
   Remove number input stylings
 */
@@ -241,6 +253,10 @@ input[type=number]::-webkit-outer-spin-button {
     -moz-appearance: none;
     appearance: none;
     margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /*
